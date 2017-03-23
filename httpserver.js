@@ -4,6 +4,7 @@ const fs = require('fs');
 const http = require('http');
 
 var server = http.createServer(function(req, res) {
+    console.log(req.url);
     let index = req.url.split('/')[2];
     let urlLength = req.url.split('')
         .length;
